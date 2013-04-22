@@ -1,4 +1,21 @@
 .content{
-    padding-top:30px;
+    padding-top:250px;
     text-align:center;
+}
+
+h1{
+	font-size: 80px;
+}
+
+.pronunciation{
+	margin-left: 190px;
+	cursor: pointer;
+}
+
+.question{
+	min-width: 987px;
+}
+
+.fade-tip{
+	
 }

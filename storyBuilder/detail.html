@@ -1,0 +1,43 @@
+<div class="editor">
+	<h2 ng-show="!encounter._id">New Encounter</h2>
+	<h2 ng-show="encounter._id">Edit Encounter</h2>
+	<p>
+		<label>Encounter name:</label>
+		<input type="text" ng-model="encounter.name">
+	</p>
+	<h3>Entries <span class="btn-add" ng-click="encounter.addEntry()" ><i class="icon-plus-sign" ></i> Add</span> </h3>
+	<ul class="item-list">
+		<li class="entry" ng-repeat="entry in encounter.entries">
+			<span class="btn-delete" ng-click="encounter.removeEntry(entry)"><i class="icon-remove-sign"></i> Delete</span>
+			<div id="entry{{entry.id}}">
+				<p>
+					<label>text:</label>
+					<textarea ng-model="entry.text"></textarea>
+				</p>
+				<h4>Options <span class="btn-add" ng-click="addOption(entry)" ><i class="icon-plus-sign" ></i> Add</span></h4>
+				<ul class="item-list">
+					<li class="option" ng-repeat="option in entry.options">
+						<span class="btn-delete" ng-click="encounter.removeEntryOption(entry, option)"><i class="icon-remove-sign"></i> Delete</span>
+						<p class="prereqs">
+							<label>prerequisites:</label>
+							<span ng-repeat="prereq in option.prereq">
+								<span class="label-info">{{prereq}}</span>
+							</span>
+							<input type="text">
+						</p>
+						<p>
+							<label>text:</label>
+							<textarea ng-model="option.text"></textarea>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="footer">
+	<div ng-show="encounter._id" ng-click="update()" class="btn btn-primary">Update</div>
+	<div ng-show="!encounter._id" ng-click="save()" class="btn btn-primary">Save</div>
+	<a href="#/" class="btn">Cancel</a>
+</div>
+

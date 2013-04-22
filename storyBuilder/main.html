@@ -1,0 +1,8 @@
+<div>
+	<ul>
+		<li ng-repeat="encounter in encounters">
+			<a href="#/edit/{{encounter._id.$oid}}">{{encounter.name}}</a>
+		</li>
+	</ul>
+    <a href="#/create" class="btn btn-primary">Add encounter</a>
+</div>
