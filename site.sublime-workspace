@@ -1,0 +1,870 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"th",
+				"this"
+			],
+			[
+				"parse",
+				"parseEntryOptions"
+			],
+			[
+				"op",
+				"option"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"grou",
+				"groups"
+			],
+			[
+				"gr",
+				"groups"
+			],
+			[
+				"en",
+				"entry"
+			],
+			[
+				"fon",
+				"font-variant"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"back",
+				"background-repeat"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"tag",
+				"TagModel"
+			],
+			[
+				"ent",
+				"entry"
+			],
+			[
+				"enc",
+				"encounterLoaded"
+			],
+			[
+				"enco",
+				"encounters"
+			],
+			[
+				"stop",
+				"stopTravelling"
+			],
+			[
+				"_",
+				"_loop"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"backg",
+				"background-image"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"fo",
+				"font-style"
+			],
+			[
+				"r",
+				"random"
+			],
+			[
+				"En",
+				"encounter"
+			],
+			[
+				"terr",
+				"terrain"
+			],
+			[
+				"rand",
+				"randomNumber"
+			],
+			[
+				"bin",
+				"binding"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"pro",
+				"professionDetail"
+			],
+			[
+				"get",
+				"getProfessions"
+			],
+			[
+				"cli",
+				"clickedItem"
+			],
+			[
+				"sel",
+				"selectedProfession"
+			],
+			[
+				"toggle",
+				"toggleSelected"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"ter",
+				"terrainType"
+			],
+			[
+				"path",
+				"pathSection"
+			],
+			[
+				"cur",
+				"currentTerrainType"
+			],
+			[
+				"pa",
+				"pathSection"
+			],
+			[
+				"star",
+				"startLoop"
+			],
+			[
+				"loo",
+				"loop"
+			],
+			[
+				"tr",
+				"travelLoop"
+			],
+			[
+				"re",
+				"recruitmentPools"
+			],
+			[
+				"p",
+				"profesion"
+			],
+			[
+				"Half",
+				"Half-Orc"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"sa",
+				"sageSkillSelector"
+			],
+			[
+				"new",
+				"newValue"
+			],
+			[
+				"su",
+				"subscribe"
+			],
+			[
+				"s",
+				"subclass"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"skil",
+				"skills"
+			],
+			[
+				"sta",
+				"startingGold"
+			],
+			[
+				"ch",
+				"character"
+			],
+			[
+				"skill",
+				"skillId"
+			],
+			[
+				"he",
+				"hero-container"
+			],
+			[
+				"on",
+				"onHeroClicked"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"sub",
+				"subclass"
+			],
+			[
+				"cla",
+				"classUpdated"
+			],
+			[
+				"ret",
+				"retval"
+			],
+			[
+				"char",
+				"characterModel"
+			],
+			[
+				"cl",
+				"classId"
+			],
+			[
+				"d",
+				"Data"
+			],
+			[
+				"g",
+				"Game"
+			],
+			[
+				"bor",
+				"border-width"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"att",
+				"attributeCost"
+			],
+			[
+				"cha",
+				"character"
+			],
+			[
+				"la",
+				"label"
+			],
+			[
+				"character",
+				"characterCreation"
+			],
+			[
+				"str",
+				"onStrengthUp"
+			],
+			[
+				"butt",
+				"buttonText"
+			],
+			[
+				"hire",
+				"hireButton"
+			],
+			[
+				"h",
+				"hireButton"
+			],
+			[
+				"inn",
+				"innerdayselapsed"
+			],
+			[
+				"da",
+				"daysElapsed"
+			],
+			[
+				"pr",
+				"professionHead-right"
+			],
+			[
+				"prof",
+				"professionHead"
+			],
+			[
+				"lis",
+				"list-style-type"
+			],
+			[
+				"Cha",
+				"Character"
+			],
+			[
+				"bui",
+				"building"
+			],
+			[
+				"displ",
+				"displayName"
+			],
+			[
+				"com",
+				"combat"
+			],
+			[
+				"tow",
+				"townMap"
+			],
+			[
+				"worl",
+				"world"
+			],
+			[
+				"wo",
+				"world"
+			],
+			[
+				"world",
+				"worldMap"
+			],
+			[
+				"c",
+				"CharacterCreationViewModel"
+			],
+			[
+				"pad",
+				"padding	padding: all"
+			],
+			[
+				"ui-",
+				"ui-btn"
+			],
+			[
+				"mari",
+				"margin	margin-left: length"
+			],
+			[
+				"font",
+				"font	font-size: size"
+			],
+			[
+				"T",
+				"Typewriter"
+			],
+			[
+				"mapper",
+				"Mapper"
+			],
+			[
+				"ty",
+				"undoType"
+			],
+			[
+				"und",
+				"undoStack"
+			],
+			[
+				"undo",
+				"undoCopy"
+			],
+			[
+				"mou",
+				"mousePos"
+			],
+			[
+				"mo",
+				"mousPos"
+			],
+			[
+				"padd",
+				"padding	padding-right: length"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"Po",
+				"position"
+			],
+			[
+				"gt",
+				"getMousePos"
+			],
+			[
+				"pag",
+				"pageY"
+			],
+			[
+				"opt",
+				"options"
+			],
+			[
+				"options",
+				"optionsToggle"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"bo",
+				"border	border-width: size"
+			],
+			[
+				"te",
+				"textInput"
+			],
+			[
+				"draw",
+				"drawText"
+			],
+			[
+				"of",
+				"offset"
+			],
+			[
+				"col",
+				"collision"
+			],
+			[
+				"to",
+				"tool"
+			],
+			[
+				"text",
+				"textInput"
+			],
+			[
+				"tool",
+				"tools"
+			],
+			[
+				"line",
+				"lines"
+			],
+			[
+				"lin",
+				"lines"
+			],
+			[
+				"y",
+				"y1"
+			],
+			[
+				"x",
+				"x1"
+			],
+			[
+				"Li",
+				"LINETOOL"
+			],
+			[
+				"too",
+				"tooltip"
+			],
+			[
+				"ke",
+				"key"
+			],
+			[
+				"key",
+				"keyTitle"
+			],
+			[
+				"er",
+				"erase"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 838,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 54,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "combat/index.html",
+			"settings":
+			{
+				"buffer_size": 785,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Closure Linter: Fix JavaScript Style"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/bmceldowney/Sites/bmceldowneyDOTcom/index.html",
+		"/Users/bmceldowney/Sites/Delve/titleScreen.html",
+		"/Users/bmceldowney/Sites/Delve/css/encounter.css",
+		"/Users/bmceldowney/Sites/Delve/js/viewModels/encounterViewModel.js",
+		"/Users/bmceldowney/Sites/Delve/models/tags.js",
+		"/Users/bmceldowney/Sites/Delve/css/delve.css",
+		"/Users/bmceldowney/Sites/Delve/js/travelLoop.js",
+		"/Users/bmceldowney/Sites/Delve/js/init.js",
+		"/Users/bmceldowney/Sites/Delve/js/utilities.js",
+		"/Users/bmceldowney/Sites/Delve/js/gameState.js",
+		"/Users/bmceldowney/Sites/Delve/data/encounters/theCave.json",
+		"/Users/bmceldowney/Sites/Delve/data/encounters/theCave_troll.json",
+		"/Users/bmceldowney/Sites/Delve/DelvePhone.sublime-project",
+		"/Users/bmceldowney/Sites/Delve/pages/partySelection/partySelection.js",
+		"/Users/bmceldowney/Sites/Delve/pages/partySelection/partySelection.css",
+		"/Users/bmceldowney/Sites/Delve/pages/partySelection/partySelection.html",
+		"/Users/bmceldowney/Sites/Delve/pages/travel/travel.js",
+		"/Users/bmceldowney/Sites/Delve/data/travel.js",
+		"/Users/bmceldowney/Sites/Delve/js/encounters.js",
+		"/Users/bmceldowney/Sites/Delve/css/titleScreen.css",
+		"/Users/bmceldowney/Sites/Delve/pages/travel/travel.css",
+		"/Users/bmceldowney/Sites/Delve/pages/travel/travel.html",
+		"/Users/bmceldowney/Sites/Delve/js/viewModels/characterViewModel.js",
+		"/Users/bmceldowney/Sites/Delve/data/professions.js",
+		"/Users/bmceldowney/Sites/Delve/frame.html",
+		"/Users/bmceldowney/Sites/Delve/data/character.js",
+		"/Users/bmceldowney/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/bmceldowney/Library/Application Support/Sublime Text 2/Packages/User/JSON.sublime-settings",
+		"/Users/bmceldowney/Sites/Delve/js/character.js",
+		"/Users/bmceldowney/Sites/Delve/data/skills.js",
+		"/Users/bmceldowney/Sites/Delve/js/data.js",
+		"/Users/bmceldowney/Sites/Delve/pages/partyOutfitting/partyOutfitting.html",
+		"/Users/bmceldowney/Sites/Delve/pages/characterCreation/characterCreation.html",
+		"/Users/bmceldowney/Sites/Delve/pages/characterCreation/characterCreation.js",
+		"/Users/bmceldowney/Sites/Delve/pages/characterCreation/characterCreation.css",
+		"/Users/bmceldowney/Sites/Delve/pages/classSelect/classSelect.js",
+		"/Users/bmceldowney/Sites/Delve/pages/classSelect/classSelect.css",
+		"/Users/bmceldowney/Sites/Delve/pages/classSelect/classSelect.html",
+		"/Users/bmceldowney/Sites/Delve/pages/intro/intro.html",
+		"/Users/bmceldowney/Sites/Delve/pages/dev/statCreation/statCreation.js",
+		"/Users/bmceldowney/Sites/Delve/pages/dev/statCreation/statCreation.html",
+		"/Users/bmceldowney/Sites/Delve/pages/dev/statCreation/statCreation.css",
+		"/Users/bmceldowney/Sites/Delve/pages/explore/explore.css",
+		"/Users/bmceldowney/Sites/Delve/pages/explore/explore.html",
+		"/Users/bmceldowney/Sites/Delve/pages/partyOutfitting/partyOutfitting.css",
+		"/Users/bmceldowney/Sites/Delve/pages/explore/explore.js",
+		"/Users/bmceldowney/Sites/Delve/pages/combat/combat.html",
+		"/Users/bmceldowney/Sites/Delve/js/delve.js",
+		"/Users/bmceldowney/Sites/Delve/js/enums.js",
+		"/Users/bmceldowney/Sites/Delve/js/tradeDefinitions.js",
+		"/Users/bmceldowney/Sites/Delve/pages/combat/combat.js",
+		"/Users/bmceldowney/Sites/Delve/pages/combat/combat.css",
+		"/Users/bmceldowney/Sites/Delve/pages/townMap/townMap.html",
+		"/Users/bmceldowney/Sites/Delve/pages/townMap/townMap.js",
+		"/Users/bmceldowney/Sites/Delve/pages/townMap/townMap.css",
+		"/Users/bmceldowney/Sites/Delve/pages/worldMap/worldMap.html",
+		"/Users/bmceldowney/Sites/Delve/pages/worldMap/worldMap.js",
+		"/Users/bmceldowney/Sites/Delve/pages/intro/intro.js",
+		"/Users/bmceldowney/Sites/Delve/resources/trades.txt",
+		"/Users/bmceldowney/Sites/Delve/resources/lastnames.txt",
+		"/Users/bmceldowney/Sites/Delve/resources/firstnames.txt",
+		"/Users/bmceldowney/Sites/Delve/pages/worldMap/worldMap.css",
+		"/Users/bmceldowney/Sites/Delve/index.html",
+		"/Users/bmceldowney/DelvePhone/www/pages/intro/intro.html",
+		"/Users/bmceldowney/DelvePhone/www/index.html",
+		"/Users/bmceldowney/DelvePhone/www/js/enums.js",
+		"/Users/bmceldowney/DelvePhone/www/js/delve.js",
+		"/Users/bmceldowney/DelvePhone/www/frame.html",
+		"/Users/bmceldowney/DelvePhone/www/js/load.js",
+		"/Users/bmceldowney/Sites/DelveWeb/js/vendor/gameState",
+		"/Users/bmceldowney/Sites/DelveWeb/Delve.sublime-project",
+		"/Users/bmceldowney/Sites/Delve/js/main.js",
+		"/Users/bmceldowney/Sites/mapper/Mapper/js/drawing.js",
+		"/Users/bmceldowney/Sites/mapper/Mapper/css/mapper.css",
+		"/Users/bmceldowney/Sites/mapper/Mapper/index.html",
+		"/Users/bmceldowney/Sites/mapper/Mapper/js/init.js",
+		"/Users/bmceldowney/Sites/mapper/Mapper/js/annotation.js",
+		"/Users/bmceldowney/Sites/mapper/Mapper/js/mouse.js",
+		"/Users/bmceldowney/Sites/mapper/Mapper/js/mapper.js",
+		"/Users/bmceldowney/Sites/mapper/Mapper/js/load.js",
+		"/Users/bmceldowney/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/bmceldowney/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/bmceldowney/Sites/Delve",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"encounterDisplay",
+			"hiredProfession1",
+			"travelDistance",
+			"currentSpeed",
+			"fullscreen",
+			"count",
+			"../..",
+			"images/professions/",
+			"Game.State",
+			"images/professions/",
+			"pcViewModel",
+			"personality",
+			"will",
+			"Intelect",
+			"physical",
+			"personality",
+			"will",
+			"intelect",
+			"physical",
+			"computed",
+			"scroll",
+			" =",
+			"statusInfo",
+			"getMousePos",
+			"            "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"../../images/professions/",
+			"state",
+			"../../images/professions/",
+			"personality",
+			"knowledge",
+			"vitality",
+			"personality",
+			"knowledge",
+			"vitality",
+			":"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 838,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								838
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "README.md",
+					"settings":
+					{
+						"buffer_size": 54,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "combat/index.html",
+					"settings":
+					{
+						"buffer_size": 785,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								525,
+								525
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.gjslint_result_view":
+	{
+		"height": 25.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 252.0,
+	"status_bar_visible": true
+}

@@ -1,0 +1,139 @@
+@import "elements.less";
+
+html,body{
+	background-image: url(../assets/background.jpg);
+	background-repeat: repeat;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	overflow: hidden;
+}
+
+.container{
+	background-color: #f8fff8;
+	padding: 15px;
+	padding-bottom: 0px;
+	outline: 2px solid black;
+	height: 100%;
+	overflow: scroll;
+}
+
+.item-list{
+	list-style-type: none;
+}
+
+.detail-footer div,
+.detail-footer a{
+	display: inline-block;
+}
+
+.footer{
+	position: fixed;
+	bottom: 0px;
+	height: 60px;
+	background-color: rgba(0,0,0,1);
+	width: 100%;
+	left: 0px;
+	padding-left: 50px;
+}
+
+.footer div,
+.footer a{
+	margin-top: 10px;
+}
+
+.editor{
+	padding-bottom: 70px;
+}
+
+.editor p{
+	margin: 0;
+}
+
+.btn-add{
+	color: blue;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.btn-delete{
+	color: darkred;
+	float: right;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: normal;
+	padding-right: 10px;
+	opacity: 0;
+	.transition(opacity);
+}
+
+.btn-delete:hover{
+	color: red;
+}
+
+.editor ul li:hover > .btn-delete{
+	opacity: 1;
+}
+
+.editor p label{
+	width: 8em;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: .5em;
+	margin-left: 10px;
+	cursor: default;
+}
+
+.editor p textarea{
+	width: 650px;
+	height: 3em;
+}
+
+.editor ul li{
+	border: 3px solid lightgray;
+	list-style-type: none;
+	padding: 5px;
+	margin-bottom: 15px;
+	border-radius: 15px;
+}
+
+.editor li.entry{
+	background-color: #f0f8f0;
+	position: relative;
+}
+
+.editor li.option{
+	background-color: #d8f0d8;
+}
+
+.editor .prereqs input{
+	display: none;
+}
+
+.label-info{
+	color: #ffffff;
+	padding-top: 3px;
+	border-radius: 5px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
