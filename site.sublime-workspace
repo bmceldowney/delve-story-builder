@@ -4,16 +4,108 @@
 		"selected_items":
 		[
 			[
+				"rb",
+				"rgba()"
+			],
+			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"back",
+				"background-repeat"
+			],
+			[
+				"backg",
+				"background-image"
+			],
+			[
+				"entr",
+				"entry"
+			],
+			[
+				"ot",
+				"option"
+			],
+			[
+				"ent",
+				"entryIndex"
+			],
+			[
+				"i",
+				"i	Tag"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"enc",
+				"encounter"
+			],
+			[
+				"en",
+				"entries"
+			],
+			[
+				"e",
+				"encounter"
+			],
+			[
+				"h",
+				"h4	Tag"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"En",
+				"Encounter"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"api",
+				"apiKey"
+			],
+			[
+				"a",
+				"angular"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
 				"th",
 				"this"
 			],
 			[
 				"parse",
 				"parseEntryOptions"
-			],
-			[
-				"op",
-				"option"
 			],
 			[
 				"for",
@@ -28,36 +120,12 @@
 				"groups"
 			],
 			[
-				"en",
-				"entry"
-			],
-			[
-				"fon",
-				"font-variant"
-			],
-			[
 				"bord",
 				"border"
 			],
 			[
-				"back",
-				"background-repeat"
-			],
-			[
-				"mar",
-				"margin-right"
-			],
-			[
 				"tag",
 				"TagModel"
-			],
-			[
-				"ent",
-				"entry"
-			],
-			[
-				"enc",
-				"encounterLoaded"
 			],
 			[
 				"enco",
@@ -80,10 +148,6 @@
 				"background-color"
 			],
 			[
-				"backg",
-				"background-image"
-			],
-			[
 				"tex",
 				"text-decoration"
 			],
@@ -94,10 +158,6 @@
 			[
 				"r",
 				"random"
-			],
-			[
-				"En",
-				"encounter"
 			],
 			[
 				"terr",
@@ -114,10 +174,6 @@
 			[
 				"inli",
 				"inline-block"
-			],
-			[
-				"pro",
-				"professionDetail"
 			],
 			[
 				"get",
@@ -152,10 +208,6 @@
 				"currentTerrainType"
 			],
 			[
-				"pa",
-				"pathSection"
-			],
-			[
 				"star",
 				"startLoop"
 			],
@@ -181,10 +233,6 @@
 			],
 			[
 				"inl",
-				"inline-block"
-			],
-			[
-				"in",
 				"inline-block"
 			],
 			[
@@ -268,10 +316,6 @@
 				"border-width"
 			],
 			[
-				"marg",
-				"margin-top"
-			],
-			[
 				"margi",
 				"margin-top"
 			],
@@ -301,10 +345,6 @@
 			],
 			[
 				"hire",
-				"hireButton"
-			],
-			[
-				"h",
 				"hireButton"
 			],
 			[
@@ -362,10 +402,6 @@
 			[
 				"c",
 				"CharacterCreationViewModel"
-			],
-			[
-				"pad",
-				"padding	padding: all"
 			],
 			[
 				"ui-",
@@ -478,60 +514,59 @@
 			[
 				"lin",
 				"lines"
-			],
-			[
-				"y",
-				"y1"
-			],
-			[
-				"x",
-				"x1"
-			],
-			[
-				"Li",
-				"LINETOOL"
-			],
-			[
-				"too",
-				"tooltip"
-			],
-			[
-				"ke",
-				"key"
-			],
-			[
-				"key",
-				"keyTitle"
-			],
-			[
-				"er",
-				"erase"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"file": "combat/js/combat.js",
 			"settings":
 			{
-				"buffer_size": 838,
+				"buffer_size": 557,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "README.md",
+			"file": "storyBuilder/main.html",
 			"settings":
 			{
-				"buffer_size": 54,
+				"buffer_size": 207,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "combat/index.html",
+			"file": "storyBuilder/index.html",
 			"settings":
 			{
-				"buffer_size": 785,
+				"buffer_size": 1015,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "storyBuilder/detail.html",
+			"settings":
+			{
+				"buffer_size": 1681,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "storyBuilder/css/style.less",
+			"settings":
+			{
+				"buffer_size": 1711,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "var storyBuilder = angular.module('storyBuilder',['ngResource']).config(function($routeProvider) {\n	$routeProvider.\n	when('/', {controller:MainCtrl, templateUrl:'main.html'}).\n	when('/create', {controller:CreateCtrl, templateUrl:'detail.html'}).\n	when('/edit/:id', {controller:EditCtrl, templateUrl:'detail.html'}).\n	otherwise({redirectTo:'/'});\n}).config(['$httpProvider', function($httpProvider) {\n	delete $httpProvider.defaults.headers.common[\"X-Requested-With\"]\n}]);\n\nstoryBuilder.factory('Encounter',function($resource){\n	var Encounter = $resource('https://api.mongohq.com/databases/DelveStories' +\n		'/collections/encounters/documents/:id',\n		{\n			id: \"@id\", \n			_apikey: 'c445u9nsg28aiohvbnrx' \n		},\n		{\n			create: { method: 'POST' },\n			update: { method: 'PUT' }\n		});\n\n		Encounter.prototype.create = function(cb){\n			return Encounter.create(\n				{},\n            	{ document: this }, \n            	cb\n            );\n\n		}\n\n		Encounter.prototype.update = function(cb){\n			var obj = angular.extend({}, this, {_id:undefined});\n			return Encounter.update(\n				{ id: this._id.$oid },\n				{ document: obj },\n				cb\n			);\n		}\n\n		Encounter.prototype.addEntry = function(){\n			var entryId = Math.max.apply(Math, this.entries.map(function(entry){return entry.id})) + 1;\n\n			this.entries.push({\n				id: entryId,\n				text: '',\n				options: [],\n				group: undefined\n			})		\n		}\n\n		Encounter.prototype.addOption = function(entry){\n			if (!entry.options) {\n				entry.options = [];\n			};\n\n			entry.options.push({\n				prereq: '',\n				text: ''\n			});\n		};\n\n		Encounter.prototype.removeEntry = function(entry){\n			var entryIndex = this.entries.indexOf(entry);\n			this.entries.splice(entryIndex, 1);\n		}\n\n		Encounter.prototype.removeEntryOption = function(entry, option){\n			var optionIndex = entry.options.indexOf(option);\n			entry.options.splice(optionIndex, 1);\n		}\n\n	return Encounter;\n});\n\nfunction EditCtrl($scope, $routeParams, $location, Encounter){\n	var params = $routeParams;\n	$scope.encounter = Encounter.get({id:$routeParams.id});\n}\n\nfunction MainCtrl($scope, Encounter){\n	$scope.encounters = Encounter.query();\n}\n\nfunction CreateCtrl($scope, Encounter, $location){\n	$scope.encounter = new Encounter({entries:[]});\n}\n",
+			"file": "storyBuilder/js/storyBuilder.js",
+			"file_size": 2214,
+			"file_write_time": 1366610064000000,
+			"settings":
+			{
+				"buffer_size": 2215,
 				"line_ending": "Unix"
 			}
 		}
@@ -539,15 +574,27 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 327.0,
 		"selected_items":
 		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
 			[
 				"",
 				"Closure Linter: Fix JavaScript Style"
 			]
 		],
-		"width": 467.0
+		"width": 602.0
 	},
 	"console":
 	{
@@ -564,7 +611,26 @@
 	},
 	"file_history":
 	[
+		"/Users/bmceldowney/Sites/bmceldowneyDOTcom/storyBuilder/js/storyBuilder.js",
+		"/Users/bmceldowney/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/bmceldowney/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/bmceldowney/Sites/bmceldowneyDOTcom/storyBuilder/css/style.less",
+		"/Users/bmceldowney/Sites/bmceldowneyDOTcom/storyBuilder/css/elements.less",
+		"/Users/bmceldowney/Sites/bmceldowneyDOTcom/storyBuilder/creat.html",
+		"/Users/bmceldowney/Sites/bmceldowneyDOTcom/combat/index.html",
+		"/Users/bmceldowney/Sites/bmceldowneyDOTcom/combat/js/combat.js",
+		"/Users/bmceldowney/Sites/bmceldowneyDOTcom/site.sublime-project",
+		"/Users/bmceldowney/Sites/bmceldowneyDOTcom/.codeintel/config",
 		"/Users/bmceldowney/Sites/bmceldowneyDOTcom/index.html",
+		"/Users/bmceldowney/Sites/bmceldowneyDOTcom/storyBuilder/main.html",
+		"/Users/bmceldowney/Sites/bmceldowneyDOTcom/storyBuilder/css/style.css",
+		"/Users/bmceldowney/Sites/bmceldowneyDOTcom/css/style.css",
+		"/Users/bmceldowney/Sites/bmceldowneyDOTcom/js/app.js",
+		"/Users/bmceldowney/Sites/bmceldowneyDOTcom/storyBuilder/index.html",
+		"/Users/bmceldowney/Sites/bmceldowneyDOTcom/combat/creation.html",
+		"/Users/bmceldowney/Sites/bmceldowneyDOTcom/combat/intro.html",
+		"/Users/bmceldowney/Sites/bmceldowneyDOTcom/README.md",
+		"/Users/bmceldowney/Sites/bmceldowneyDOTcom/combat/css/style.css",
 		"/Users/bmceldowney/Sites/Delve/titleScreen.html",
 		"/Users/bmceldowney/Sites/Delve/css/encounter.css",
 		"/Users/bmceldowney/Sites/Delve/js/viewModels/encounterViewModel.js",
@@ -590,7 +656,6 @@
 		"/Users/bmceldowney/Sites/Delve/data/professions.js",
 		"/Users/bmceldowney/Sites/Delve/frame.html",
 		"/Users/bmceldowney/Sites/Delve/data/character.js",
-		"/Users/bmceldowney/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/Users/bmceldowney/Library/Application Support/Sublime Text 2/Packages/User/JSON.sublime-settings",
 		"/Users/bmceldowney/Sites/Delve/js/character.js",
 		"/Users/bmceldowney/Sites/Delve/data/skills.js",
@@ -665,6 +730,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"						",
+			"\nr",
+			"\n}",
+			"it",
+			"item-list",
 			"encounterDisplay",
 			"hiredProfession1",
 			"travelDistance",
@@ -717,30 +787,28 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "combat/js/combat.js",
 					"settings":
 					{
-						"buffer_size": 838,
+						"buffer_size": 557,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								838
+								41,
+								264
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -750,23 +818,23 @@
 				},
 				{
 					"buffer": 1,
-					"file": "README.md",
+					"file": "storyBuilder/main.html",
 					"settings":
 					{
-						"buffer_size": 54,
+						"buffer_size": 207,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								94,
+								94
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -776,18 +844,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "combat/index.html",
+					"file": "storyBuilder/index.html",
 					"settings":
 					{
-						"buffer_size": 785,
+						"buffer_size": 1015,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								525,
-								525
+								965,
+								965
 							]
 						],
 						"settings":
@@ -798,6 +866,87 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "storyBuilder/detail.html",
+					"settings":
+					{
+						"buffer_size": 1681,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								20,
+								20
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "storyBuilder/css/style.less",
+					"settings":
+					{
+						"buffer_size": 1711,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								541,
+								541
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 240.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "storyBuilder/js/storyBuilder.js",
+					"settings":
+					{
+						"buffer_size": 2215,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2215,
+								2215
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1305.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -865,6 +1014,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 252.0,
+	"side_bar_width": 202.0,
 	"status_bar_visible": true
 }

@@ -14,7 +14,7 @@
 					<label>text:</label>
 					<textarea ng-model="entry.text"></textarea>
 				</p>
-				<h4>Options <span class="btn-add" ng-click="addOption(entry)" ><i class="icon-plus-sign" ></i> Add</span></h4>
+				<h4>Options <span class="btn-add" ng-click="encounter.addOption(entry)" ><i class="icon-plus-sign" ></i> Add</span></h4>
 				<ul class="item-list">
 					<li class="option" ng-repeat="option in entry.options">
 						<span class="btn-delete" ng-click="encounter.removeEntryOption(entry, option)"><i class="icon-remove-sign"></i> Delete</span>
@@ -28,6 +28,10 @@
 						<p>
 							<label>text:</label>
 							<textarea ng-model="option.text"></textarea>
+						</p>
+						<p>
+							<label>link to:</label>
+							<select></select>
 						</p>
 					</li>
 				</ul>

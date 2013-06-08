@@ -13,7 +13,7 @@ storyBuilder.factory('Encounter',function($resource){
 		'/collections/encounters/documents/:id',
 		{
 			id: "@id", 
-			_apikey: 'c445u9nsg28aiohvbnrx' 
+			_apikey: '' 
 		},
 		{
 			create: { method: 'POST' },
@@ -49,6 +49,17 @@ storyBuilder.factory('Encounter',function($resource){
 			})		
 		}
 
+		Encounter.prototype.addOption = function(entry){
+			if (!entry.options) {
+				entry.options = [];
+			};
+
+			entry.options.push({
+				prereq: '',
+				text: ''
+			});
+		};
+
 		Encounter.prototype.removeEntry = function(entry){
 			var entryIndex = this.entries.indexOf(entry);
 			this.entries.splice(entryIndex, 1);
@@ -65,26 +76,6 @@ storyBuilder.factory('Encounter',function($resource){
 function EditCtrl($scope, $routeParams, $location, Encounter){
 	var params = $routeParams;
 	$scope.encounter = Encounter.get({id:$routeParams.id});
-
-	$scope.addOption = function(entry){
-		if (!entry.options) {
-			entry.options = [];
-		};
-		entry.options.push({
-			prereq: '',
-			text: ''
-		});
-	};
-	$scope.update = function(){
-		$scope.encounter.update(function(){
-			$location.path('/');
-		});
-	}
-	$scope.save = function(){
-		$scope.encounter.update(function(){
-			$location.path('/');
-		});
-	}
 }
 
 function MainCtrl($scope, Encounter){
@@ -93,19 +84,4 @@ function MainCtrl($scope, Encounter){
 
 function CreateCtrl($scope, Encounter, $location){
 	$scope.encounter = new Encounter({entries:[]});
- 
-	$scope.addOption = function(entry){
-		if (!entry.options) {
-			entry.options = [];
-		};
-		entry.options.push({
-			prereq: '',
-			text: ''
-		});
-	};
-	$scope.save = function(){
-		$scope.encounter.create(function(){
-			$location.path('/');
-		});
-	}
 }
