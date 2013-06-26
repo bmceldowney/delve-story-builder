@@ -1,3 +1,9 @@
 .c9revisions/
 .idea
 .codeintel
+
+bin
+
+Debug
+delve-story-builder.csproj.user
+delve-story-builder.v11.suo

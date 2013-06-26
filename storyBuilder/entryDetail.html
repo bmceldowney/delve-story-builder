@@ -1,0 +1,20 @@
+﻿<div>
+    <div id="entry{{selectedItem.id}}">
+        <div class="ed-container">
+            <div class="ed-label">text</div>
+            <div class="ed-label-tail"></div>
+            <textarea ng-model="selectedItem.text"></textarea>
+        </div>
+
+        <div class="ed-container">
+            <div class="ed-label">
+                <span>options</span>
+                <div class="en-add-button" ng-click="encounter.addOption(selectedItem)"></div>
+            </div>
+            <div class="ed-label-tail"></div>
+            <div class="ed-op-prereqs-container">
+                <div class="ed-options" ng-repeat="option in selectedItem.options">{{option.id}} {{option.text}}</div>
+            </div>
+        </div>
+    </div>
+</div>

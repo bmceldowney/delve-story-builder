@@ -1,47 +1,51 @@
-<div class="editor">
-	<h2 ng-show="!encounter._id">New Encounter</h2>
-	<h2 ng-show="encounter._id">Edit Encounter</h2>
-	<p>
-		<label>Encounter name:</label>
-		<input type="text" ng-model="encounter.name">
-	</p>
-	<h3>Entries <span class="btn-add" ng-click="encounter.addEntry()" ><i class="icon-plus-sign" ></i> Add</span> </h3>
-	<ul class="item-list">
-		<li class="entry" ng-repeat="entry in encounter.entries">
-			<span class="btn-delete" ng-click="encounter.removeEntry(entry)"><i class="icon-remove-sign"></i> Delete</span>
-			<div id="entry{{entry.id}}">
-				<p>
-					<label>text:</label>
-					<textarea ng-model="entry.text"></textarea>
-				</p>
-				<h4>Options <span class="btn-add" ng-click="encounter.addOption(entry)" ><i class="icon-plus-sign" ></i> Add</span></h4>
-				<ul class="item-list">
-					<li class="option" ng-repeat="option in entry.options">
-						<span class="btn-delete" ng-click="encounter.removeEntryOption(entry, option)"><i class="icon-remove-sign"></i> Delete</span>
-						<p class="prereqs">
-							<label>prerequisites:</label>
-							<span ng-repeat="prereq in option.prereq">
-								<span class="label-info">{{prereq}}</span>
-							</span>
-							<input type="text">
-						</p>
-						<p>
-							<label>text:</label>
-							<textarea ng-model="option.text"></textarea>
-						</p>
-						<p>
-							<label>link to:</label>
-							<select></select>
-						</p>
-					</li>
-				</ul>
-			</div>
-		</li>
-	</ul>
+<header class="detail-header">
+    <label>Encounter name:</label>
+    <input type="text" ng-model="encounter.name" class="encounter-name">
+</header>
+<div expando="{bottom: 20}">
+    <div class="container" style="height: 100%">
+        <div class="editor">
+            <section class="entry-nav">
+                <header>
+                    Entries
+                <!--<button class="btn-add" ng-click="encounter.addEntry()"><i class="icon-plus-sign"></i>&nbsp;Add</button>-->
+                    <div class="en-add-button" ng-click="encounter.addEntry()"></div>
+                </header>
+                <section>
+                    <div class="vertical-scroller">
+                        <div class="entry-container" ng-repeat="entry in encounter.entries">
+                            <div class="entry" ng-class="{'selected-item': isEntrySelected()}" tabindex="0" ng-focus="elementFocused()"><span class="label">{{entry.id}}</span> {{entry.text}}</div>
+                            <!--<summary ng-class="{'selected-item': isEntrySelected()}" ng-focus="elementFocused()">[{{entry.id}}] {{entry.text}}</summary>-->
+                            <div ui-sortable="sortableOptions" ng-model="entry.options">
+                                <div class="option"
+                                    ng-class="{'selected-item': isOptionSelected()}"
+                                    tabindex="0"
+                                    ng-focus="elementFocused()"
+                                    ng-repeat="option in entry.options"
+                                    ng-click="optionClickHandler($event)">
+                                    <div class="en-op-drag-handle"></div>
+                                    <span class="en-op-text">{{option.text}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="details">
+                <header>Details</header>
+                <section>
+                    <div class="vertical-scroller">
+                        <ng-include src="detailUrl"></ng-include>
+                    </div>
+                </section>
+            </section>
+        </div>
+        <encounterrunner></encounterrunner>
+    </div>
 </div>
-<div class="footer">
-	<div ng-show="encounter._id" ng-click="update()" class="btn btn-primary">Update</div>
-	<div ng-show="!encounter._id" ng-click="save()" class="btn btn-primary">Save</div>
-	<a href="#/" class="btn">Cancel</a>
-</div>
+<footer>
+    <div ng-show="encounter._id" ng-click="update()" class="btn btn-primary">Update</div>
+    <div ng-show="!encounter._id" ng-click="save()" class="btn btn-primary">Save</div>
+    <a href="#/" class="btn">Cancel</a>
+</footer>
 

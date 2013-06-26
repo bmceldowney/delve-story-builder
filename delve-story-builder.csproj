@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34816AF9-08C6-4DBC-808F-3DCEEA434169}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>delve_story_builder</RootNamespace>
+    <AssemblyName>delve-story-builder</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="combat\creation.html" />
+    <Content Include="combat\css\style.css" />
+    <Content Include="combat\index.html" />
+    <Content Include="combat\intro.html" />
+    <Content Include="combat\js\angular.js" />
+    <Content Include="combat\js\combat.js" />
+    <Content Include="css\style.css" />
+    <Content Include="index.html" />
+    <Content Include="js\3rd party\angular.js" />
+    <Content Include="storyBuilder\assets\add-thin.png" />
+    <Content Include="storyBuilder\assets\add.png" />
+    <Content Include="storyBuilder\assets\addIcon.png" />
+    <Content Include="storyBuilder\assets\background.jpg" />
+    <Content Include="storyBuilder\assets\drag-handle-100.png" />
+    <Content Include="storyBuilder\assets\drag-handle-25.png" />
+    <Content Include="storyBuilder\assets\drag-handle-50.png" />
+    <Content Include="storyBuilder\assets\runner-icon-gray-filled.png" />
+    <Content Include="storyBuilder\assets\runner-icon-gray.png" />
+    <Content Include="storyBuilder\assets\runner-icon-white-filled.png" />
+    <Content Include="storyBuilder\assets\runner-icon-white.png" />
+    <Content Include="storyBuilder\assets\runner-icon.png" />
+    <Content Include="storyBuilder\controls\encounterRunner\encounterRunner.css" />
+    <Content Include="storyBuilder\controls\encounterRunner\encounterRunner.html" />
+    <Content Include="storyBuilder\controls\encounterRunner\encounterRunner.js" />
+    <Content Include="storyBuilder\css\editor.css" />
+    <Content Include="storyBuilder\js\services\DataProvider.js" />
+    <Content Include="storyBuilder\js\services\EncounterEngine.js" />
+    <Content Include="storyBuilder\js\services\GameState.js" />
+    <Content Include="storyBuilder\js\services\SettingsService.js" />
+    <Content Include="storyBuilder\js\vendor\angular-ui\select2.js" />
+    <Content Include="storyBuilder\js\vendor\bootstrap\ui-bootstrap-custom-0.4.0.js" />
+    <Content Include="storyBuilder\js\vendor\localStorage\localStorage.js" />
+    <Content Include="storyBuilder\js\vendor\select2\select2.js" />
+    <Content Include="storyBuilder\js\vendor\angular-ui\sortable.js" />
+    <Content Include="storyBuilder\optionDetail.html" />
+    <Content Include="storyBuilder\css\font-awesome.min.css" />
+    <Content Include="storyBuilder\detail.html" />
+    <Content Include="storyBuilder\entryDetail.html" />
+    <Content Include="storyBuilder\font\fontawesome-webfont.svg" />
+    <Content Include="storyBuilder\index.html" />
+    <Content Include="storyBuilder\js\services\Encounter.js" />
+    <Content Include="storyBuilder\js\storyBuilder.js" />
+    <Content Include="storyBuilder\main.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="storyBuilder\css\style.css" />
+    <Content Include="storyBuilder\font\fontawesome-webfont.eot" />
+    <Content Include="storyBuilder\font\fontawesome-webfont.ttf" />
+    <Content Include="storyBuilder\font\fontawesome-webfont.woff" />
+    <Content Include="storyBuilder\font\FontAwesome.otf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55583</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55564/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
