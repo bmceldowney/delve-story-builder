@@ -1,3 +1,4 @@
+/// <reference path="../../Scripts/angular-1.0.3.intellisense.js" />
 angular.module('storyBuilder', ['ngResource',
                                 'DataProvider',
                                 'EncounterEngine',

@@ -66,6 +66,9 @@
     <Content Include="css\style.css" />
     <Content Include="index.html" />
     <Content Include="js\3rd party\angular.js" />
+    <Content Include="Scripts\angular-1.1.5.js" />
+    <Content Include="Scripts\angular-resource-1.1.5.js" />
+    <Content Include="Scripts\_references.js" />
     <Content Include="storyBuilder\assets\add-thin.png" />
     <Content Include="storyBuilder\assets\add.png" />
     <Content Include="storyBuilder\assets\addIcon.png" />
@@ -86,7 +89,7 @@
     <Content Include="storyBuilder\js\services\EncounterEngine.js" />
     <Content Include="storyBuilder\js\services\GameState.js" />
     <Content Include="storyBuilder\js\services\SettingsService.js" />
-    <None Include="Scripts\angular-1.0.3.intellisense.js" />
+    <None Include="Scripts\angular-1.1.5.intellisense.js" />
     <Content Include="storyBuilder\js\vendor\angular-ui\select2.js" />
     <Content Include="storyBuilder\js\vendor\bootstrap\ui-bootstrap-custom-0.4.0.js" />
     <Content Include="storyBuilder\js\vendor\localStorage\localStorage.js" />
