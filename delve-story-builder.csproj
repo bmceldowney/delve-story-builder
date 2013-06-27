@@ -85,6 +85,7 @@
     <Content Include="storyBuilder\controls\encounterRunner\encounterRunner.html" />
     <Content Include="storyBuilder\controls\encounterRunner\encounterRunner.js" />
     <Content Include="storyBuilder\css\editor.css" />
+    <Content Include="storyBuilder\js\DomUtilities.js" />
     <Content Include="storyBuilder\js\services\DataProvider.js" />
     <Content Include="storyBuilder\js\services\EncounterEngine.js" />
     <Content Include="storyBuilder\js\services\GameState.js" />

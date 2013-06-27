@@ -5,21 +5,24 @@ angular.module('encounterRunner').directive('encounterrunner', function () {
         restrict: 'E',
         templateUrl: 'controls/encounterRunner/encounterRunner.html',
         replace: true,
-        controller: function ($scope, $attrs, encounterService) {
+        controller: function ($scope, $rootScope, $attrs, encounterService) {
             $scope.state = '';
-            $scope.$watch(encounterService.currentEntry, showEncounter)
-            var loaded = false;
+            //$scope.$watch(encounterService.currentEntry, showEncounter)
+            //var loaded = false;
 
             $scope.visButtonClicked = function (e) {
                 if (!$scope.state) {
                     $scope.state = 'expanded';
-                    if (!loaded) {
-                        load();
-                        loaded = true;
-                    }
+                    //if (!loaded) {
+                    //load();
+                    loaded = true;
+                    //}
                 } else {
                     $scope.state = '';
                 }
+                setTimeout(function () {
+                    $rootScope.$broadcast('elementSizeChanged');
+                }, 500);
             }
 
             $scope.reset = function () {
@@ -50,7 +53,10 @@ angular.module('encounterRunner').directive('encounterrunner', function () {
                 showEncounter();
             }
         },
-        link: function (scope, element, attributes, controller) {
+        link: {
+            post: function (scope) {
+                scope.$parent.$broadcast('elementSizeChanged');
+            }
         }
     };
 });

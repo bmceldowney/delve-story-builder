@@ -9,7 +9,8 @@ angular.module('storyBuilder', ['ngResource',
                                 'ui.select2',
                                 'ui.bootstrap',
                                 'LocalStorageModule',
-                                'SettingsServiceProvider']);
+                                'SettingsServiceProvider',
+                                'DomUtilities']);
 
 angular.module('storyBuilder').config(function ($routeProvider) {
     $routeProvider.
@@ -61,7 +62,7 @@ angular.module('storyBuilder').directive('ngFocus', ['$parse', function ($parse)
     }
 }]);
 
-angular.module('storyBuilder').directive('expando', function () {
+angular.module('storyBuilder').directive('expando', function (utilities) {
     return {
         restrict: 'A',
         transclude: true,
@@ -69,10 +70,13 @@ angular.module('storyBuilder').directive('expando', function () {
         link: {
             post: function (scope, element, attributes, controller) {
                 function setHeight() {
-                    var headerHeight = element[0].previousElementSibling.clientHeight;
-                    var footerHeight = element[0].nextElementSibling.clientHeight;
-                    element[0].style.height = (window.innerHeight - headerHeight - footerHeight) + 'px';
+                    var headerHeight = element[0].previousElementSibling.offsetTop + element[0].previousElementSibling.clientHeight;
+                    //var height =  utilities.getElementTop(element[0].nextElementSibling);
+                    var footerHeight = element[0].nextElementSibling.offsetTop; //height;
+                    element[0].style.height = ((window.innerHeight - headerHeight) - (window.innerHeight - footerHeight)) + 'px';
                 }
+
+                scope.$on('elementSizeChanged', setHeight);
 
                 window.addEventListener('resize', setHeight);
                 document.addEventListener('ready', setHeight);
