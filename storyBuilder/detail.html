@@ -2,8 +2,9 @@
     <label>Encounter name:</label>
     <input type="text" ng-model="encounter.name" class="encounter-name">
 </header>
-<div expando="{bottom: 20}">
-    <div class="container" style="height: 100%">
+<div class="container" style="height: 100%">
+    <div style="height: 0px"></div>
+    <div expando="{bottom: 20}">
         <div class="editor">
             <section class="entry-nav">
                 <header>
@@ -41,8 +42,8 @@
             </section>
         </div>
     </div>
+    <encounterrunner></encounterrunner>
 </div>
-<encounterrunner></encounterrunner>
 <footer>
     <div ng-show="encounter._id" ng-click="update()" class="btn btn-primary footer-btn">Update</div>
     <div ng-show="!encounter._id" ng-click="save()" class="btn btn-primary footer-btn">Save</div>

@@ -69,18 +69,24 @@ angular.module('storyBuilder').directive('expando', function (utilities) {
         template: '<div style="height: 100%" ng-transclude></div>',
         link: {
             post: function (scope, element, attributes, controller) {
-                function setHeight() {
+                function setHeight(style) {
                     var headerHeight = element[0].previousElementSibling.offsetTop + element[0].previousElementSibling.clientHeight;
-                    //var height =  utilities.getElementTop(element[0].nextElementSibling);
                     var footerHeight = element[0].nextElementSibling.offsetTop; //height;
                     element[0].style.height = ((window.innerHeight - headerHeight) - (window.innerHeight - footerHeight)) + 'px';
                 }
 
-                scope.$on('elementSizeChanged', setHeight);
+                scope.$on('elementSizeChanged', function (event, message) {
+                    setHeight();
+                });
 
-                window.addEventListener('resize', setHeight);
-                document.addEventListener('ready', setHeight);
+                window.addEventListener('resize', setHeightNoAnim);
+                document.addEventListener('ready', setHeightNoAnim);
+
                 setHeight();
+
+                function setHeightNoAnim() {
+                    setHeight();
+                }
             }
         }
     };
@@ -114,10 +120,6 @@ angular.module('storyBuilder').controller('EditCtrl', function ($scope, $routePa
         return this.selectedItem.$$hashKey === this.option.$$hashKey;
     }
 
-    //$scope.optionClickHandler = function (e) {
-    //    e.currentTarget.focus();
-    //}
-
     $scope.elementFocused = function () {
         var entry = this.entry;
         var option = this.option;
@@ -129,10 +131,6 @@ angular.module('storyBuilder').controller('EditCtrl', function ($scope, $routePa
             $scope.selectedItem = entry;
         }
     }
-
-    $scope.select2Options = {
-        //dropdownCssClass: 'od-select'
-    };
 
     $scope.sortableOptions = {
         axis: 'y',
@@ -153,6 +151,12 @@ angular.module('storyBuilder').controller('EditItemCtrl', function ($scope) {
         item.prereq = item.prereq || [];
         item.prereq.push(this.prereqToAdd);
         this.prereqToAdd = null;
+    }
+
+    $scope.addResult = function (item) {
+        item.results = item.results || [];
+        item.results.push(this.resultToAdd);
+        this.resultToAdd = null;
     }
 });
 

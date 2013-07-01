@@ -1,17 +1,25 @@
 ﻿<div id="encounter-runner" ng-class="state">
-<!--    <div class="er-button" ng-click="visButtonClicked()">
+    <!--    <div class="er-button" ng-click="visButtonClicked()">
         <div class="er-icon"></div>
     </div>-->
     <div class="er-body er-slide-anim">
+        <div class="er-close-button" ng-click="visButtonClicked()">x</div>
         <div class="er-container">
             <div class="er-command-bar">
                 <button ng-click="reset()">Reset</button>
             </div>
-            <div class="er-canvas">
-                <div class="er-text">{{currentEntry.text}}</div>
-                <div class="er-options" ng-show="option.active" ng-click="navigate(option)" ng-repeat="option in currentEntry.options">{{option.text}}</div>
+            <div class="er-content">
+                <div class="er-canvas">
+                    <div class="er-text">{{currentEntry.text}}</div>
+                    <div class="er-options"
+                        ng-show="option.active"
+                        ng-click="navigate(option)"
+                        ng-repeat="option in currentEntry.options">
+                        {{option.text}}
+                    </div>
+                </div>
+                <div class="er-tag-inspector"></div>
             </div>
-            <div class="er-tag-inspector"></div>
         </div>
     </div>
 </div>

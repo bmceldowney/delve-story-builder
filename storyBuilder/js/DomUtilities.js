@@ -3,15 +3,6 @@
 angular.module('DomUtilities').factory('utilities', function () {
     return {
         getElementTop: function (elem) {
-            //var elem;
-
-            //if (document.getElementById) {
-            //    elem = document.getElementById(Elem);
-            //}
-            //else if (document.all) {
-            //    elem = document.all[Elem];
-            //}
-
             yPos = elem.offsetTop;
             tempEl = elem.offsetParent;
 
@@ -21,6 +12,23 @@ angular.module('DomUtilities').factory('utilities', function () {
             }
 
             return yPos;
+        },
+        whichTransitionEvent: function () {
+            var t;
+            var el = document.createElement('fakeelement');
+            var transitions = {
+                'transition': 'transitionend',
+                'OTransition': 'oTransitionEnd',
+                'MozTransition': 'transitionend',
+                'WebkitTransition': 'webkitTransitionEnd'
+            }
+
+            for (t in transitions) {
+                if (el.style[t] !== undefined) {
+                    return transitions[t];
+                }
+            }
         }
+
     };
 });

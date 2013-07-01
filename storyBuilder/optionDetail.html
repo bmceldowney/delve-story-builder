@@ -26,11 +26,27 @@
         <div class="ed-label-tail"></div>
         <textarea ng-model="selectedItem.text"></textarea>
     </div>
-    <div class="ed-op-result">
+    <div class="ed-op-prereqs">
+        <div class="ed-label">
+            <span>results</span>
+            <div class="en-add-button" ng-click="resultInputShown = !resultInputShown && 30 || 0" ng-init="resultInputShown = 0"></div>
+        </div>
+        <div class="ed-label-tail"></div>
+        <div class="ed-op-prereqs-container">
+            <div class="ed-op-prereqs-input-container" ng-style="{'height':resultInputShown + 'px'}">
+                <input class="ed-op-prereqs-input" ng-model="resultToAdd" type="text" />
+                <div ng-click="addResult(selectedItem)" class="btn ed-op-prereqs-input-btn">Add</div>
+            </div>
+            <div class="pre-pos-label-container" ng-repeat="result in selectedItem.results">
+                <span class="label pre-pos-label label-info">{{result}}</span>
+            </div>
+        </div>
+    </div>
+<!--    <div class="ed-op-result">
         <div class="ed-label">result</div>
         <div class="ed-label-tail"></div>
         <input type="text" ng-model="selectedItem.result" />
-    </div>
+    </div>-->
     <div class="ed-op-link">
         <div class="ed-label">links to</div>
         <div class="ed-label-tail"></div>

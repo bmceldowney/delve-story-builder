@@ -10,45 +10,29 @@ angular.module('EncounterEngine').factory('encounterService', function (dataServ
     var encounter = {};
 
     function loadEncounter(encounter) {
-
         encounter.entries.forEach(processEntry.bind(this));
         this.currentEntry = 0;
     }
 
     function loadEncounterFromId(id) {
-        //console.log('entering loadEncounter');
         var encounter = dataService.getEncounter(id);
         var url = '../..' + encounter.url;
-        //console.log('url: ' + url);
 
         $.getJSON(url).done(function (result) {
-            //console.log('encounter retrieved');
             this.encounter = result;
-            //console.log('looping through entries');
             result.entries.forEach(processEntry.bind(this));
 
-            //console.log('setting currentEntry');
             this.currentEntry = 0;
-            //console.log('firing encounterLoaded');
             this.encounterLoaded = true;
         }.bind(this));
-
-        //function hookNavigationHandler(option) {
-        //    option.navigate = this.navigate.bind(this);
-        //}
     };
 
     function processEntry(entry) {
-        //console.log('entering processEntry');
         if (entry.options) {
-            //entry.options.forEach(hookNavigationHandler.bind(this))
-
-            //entry.options = filterOptions(entry);
             filterOptions(entry);
         }
 
         this.entries.push(entry);
-        //console.log('leaving processEntry');
     }
 
     function navigate(option) {

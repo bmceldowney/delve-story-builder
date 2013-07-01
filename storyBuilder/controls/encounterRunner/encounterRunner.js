@@ -1,28 +1,25 @@
-﻿angular.module('encounterRunner', ['EncounterEngine']);
+﻿angular.module('encounterRunner', ['EncounterEngine', 'GameState']);
 
 angular.module('encounterRunner').directive('encounterrunner', function () {
     return {
         restrict: 'E',
         templateUrl: 'controls/encounterRunner/encounterRunner.html',
         replace: true,
-        controller: function ($scope, $rootScope, $attrs, encounterService) {
+        controller: function ($scope, $rootScope, $attrs, encounterService, gameState) {
             $scope.state = '';
-            //$scope.$watch(encounterService.currentEntry, showEncounter)
-            //var loaded = false;
+            $scope.$watch(encounterService.currentEntry, showEncounter)
+            var loaded = false;
 
             $scope.visButtonClicked = function (e) {
                 if (!$scope.state) {
                     $scope.state = 'expanded';
-                    //if (!loaded) {
-                    //load();
-                    loaded = true;
-                    //}
+                    if (!loaded) {
+                        load();
+                        loaded = true;
+                    }
                 } else {
                     $scope.state = '';
                 }
-                setTimeout(function () {
-                    $rootScope.$broadcast('elementSizeChanged');
-                }, 500);
             }
 
             $scope.reset = function () {
@@ -35,7 +32,7 @@ angular.module('encounterRunner').directive('encounterrunner', function () {
             }
 
             function load() {
-                encounterService.loadEncounter($scope.$parent.encounter);
+                encounterService.loadEncounter($scope.encounter);
                 showEncounter();
             }
 
