@@ -16,6 +16,7 @@ angular.module('storyBuilder').config(function ($routeProvider) {
     $routeProvider.
 	when('/', { controller: 'MainCtrl', templateUrl: 'main.html' }).
 	when('/create', { controller: 'CreateCtrl', templateUrl: 'detail.html' }).
+	when('/export', { controller: 'ExportCtrl', template: '{{encounters}}' }).
 	when('/edit/:id', { controller: 'EditCtrl', templateUrl: 'detail.html' }).
 	otherwise({ redirectTo: '/' });
 }).config(['$httpProvider', function ($httpProvider) {
@@ -160,8 +161,12 @@ angular.module('storyBuilder').controller('EditItemCtrl', function ($scope) {
     }
 });
 
-angular.module('storyBuilder').controller('MainCtrl', function ($scope, Encounter) {
-    $scope.encounters = Encounter.query();
+angular.module('storyBuilder').controller('MainCtrl', function ($rootScope, Encounter) {
+    $rootScope.encounters = Encounter.query();
+})
+
+angular.module('storyBuilder').controller('ExportCtrl', function ($scope, Encounter) {
+    //$scope.encounters = Encounter
 })
 
 angular.module('storyBuilder').controller('CreateCtrl', function ($scope, Encounter, $location) {
