@@ -8,15 +8,15 @@ angular.module('encounterRunner').directive('encounterrunner', function () {
         controller: function ($scope, $rootScope, $attrs, encounterService, gameState) {
             $scope.state = '';
             $scope.$watch(encounterService.currentEntry, showEncounter)
-            var loaded = false;
+            //var loaded = false;
 
             $scope.visButtonClicked = function (e) {
                 if (!$scope.state) {
                     $scope.state = 'expanded';
-                    if (!loaded) {
+                    //if (!loaded) {
                         load();
-                        loaded = true;
-                    }
+                        //loaded = true;
+                    //}
                 } else {
                     $scope.state = '';
                 }

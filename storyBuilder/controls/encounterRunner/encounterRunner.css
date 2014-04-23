@@ -30,7 +30,7 @@
 }
 
 .er-icon {
-    background-image: url('/storyBuilder/assets/runner-icon-white-filled.png');
+    background-image: url('../../assets/runner-icon-white-filled.png');
     /* background-position: 0% 50%; */
     background-repeat: no-repeat;
     width: 100%;

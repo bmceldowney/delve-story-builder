@@ -31,6 +31,14 @@ body {
     display: inline-block;
 }
 
+.main-container {
+    background-color: mintcream;
+    height: 100%;
+    padding: 20px;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
 main {
     min-height: 100%;
     margin: 0px;
@@ -70,7 +78,7 @@ footer {
 }
 
 .en-add-button {
-    background-image: url('/storyBuilder/assets/add-thin.png');
+    background-image: url('../assets/add-thin.png');
     background-position: center;
     background-repeat: no-repeat;
     opacity: .25;
@@ -253,7 +261,7 @@ section.details {
     width: 15px;
     height: 20px;
     float: left;
-    background-image: url('/storyBuilder/assets/drag-handle-25.png');
+    background-image: url('../assets/drag-handle-25.png');
     background-position: center;
     cursor: move;
     padding: 0;
