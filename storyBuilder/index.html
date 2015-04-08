@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="storyBuilder">
 <head>
     <title>storyBuilder</title>
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
@@ -34,8 +34,8 @@
     <script src="js/DomUtilities.js"></script>
     <script type="text/javascript" src="js/storyBuilder.js"></script>
 </head>
-<body ng-app="storyBuilder">
-
+<body ng-controller="mainCtrl">
+    <button ng-click="purgeconnectionData" class="btn btn-primary">Purge connection data</button>
     <div modal="apiKeyModalOpen" close="close()" options="modalOpts">
         <div class="modal-header">
             <h3>Add database information</h3>

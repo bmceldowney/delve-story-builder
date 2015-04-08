@@ -93,6 +93,13 @@ angular.module('storyBuilder').directive('expando', function (utilities) {
     };
 });
 
+angular.module('storyBuilder').controller('mainCtrl', function ($scope) {
+    $scope.purgeconnectionData = function () {
+        localStorageService.remove('apiKey', settings.app.apiKey);
+        localStorageService.remove('url', settings.app.url);
+    }
+})
+
 angular.module('storyBuilder').controller('EditCtrl', function ($scope, $routeParams, $location, Encounter) {
     var params = $routeParams;
     $scope.encounter = Encounter.get({ id: $routeParams.id });
